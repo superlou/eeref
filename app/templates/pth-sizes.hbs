@@ -1,0 +1,30 @@
+<h1>PTH Sizes</h1>
+
+<p>Maximum lead diameter: {{input value=maxLeadDiameter}} mm</p>
+
+<table>
+  <tr>
+    <th>IPC Class</th>
+    <th>Minimum Hole Size (mm)</th>
+    <th>Minimum Annular Ring Size (mm)</th>
+    <th>IPC-7251 Name (circular, square)</th>
+  </tr>
+  <tr>
+    <td>Class A</td>
+    <td>{{minHoleSizes.[0]}}</td>
+    <td>{{minAnnularRings.[0]}}</td>
+    <td>{{namingConventions.[0]}}, {{namingConventions.[3]}}</td>
+  </tr>
+  <tr>
+    <td>Class B</td>
+    <td>{{minHoleSizes.[1]}}</td>
+    <td>{{minAnnularRings.[1]}}</td>
+    <td>{{namingConventions.[1]}}, {{namingConventions.[4]}}</td>
+  </tr>
+  <tr>
+    <td>Class C</td>
+    <td>{{minHoleSizes.[2]}}</td>
+    <td>{{minAnnularRings.[2]}}</td>
+    <td>{{namingConventions.[2]}}, {{namingConventions.[5]}}</td>
+  </tr>
+</table>

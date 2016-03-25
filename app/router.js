@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('pth-sizes');
 });
 
 export default Router;
