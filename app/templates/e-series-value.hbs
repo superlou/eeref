@@ -1,0 +1,29 @@
+<h1>E-Series Value</h1>
+<p>Select the preferred value from various E-series.</p>
+
+<p>Nominal value: {{input value=nominal}}</p>
+
+<table>
+  <tr>
+    <th>E6</th>
+    <th>E12</th>
+    <th>E24</th>
+    <th>E48</th>
+    <th>E96</th>
+  </tr>
+  <tr>
+    {{#each e_values_under as |value|}}
+      <td>{{metric-prefix value}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    {{#each e_values as |value|}}
+      <td>{{metric-prefix value}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    {{#each e_values_over as |value|}}
+      <td>{{metric-prefix value}}</td>
+    {{/each}}
+  </tr>
+</table>
